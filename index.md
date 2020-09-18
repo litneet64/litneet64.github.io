@@ -5,4 +5,4 @@
 
 
 # About
-Inspired by [_Brian Krebs_](https://krebsonsecurity.com/), [_This Week in OSINT_](https://sector035.nl), [_MalwareTech_](https://www.malwaretech.com/) and many more, I decided to make my own blog about similar topics on **infosec**, but most importantly, content that's locally related and _barely_ covered by these professionals for a lot of reasons.
+Inspired by [_Brian Krebs_](https://krebsonsecurity.com/), [_This Week in OSINT_](https://sector035.nl), [_MalwareTech_](https://www.malwaretech.com/) and many more, I decided to make my own blog about similar topics on **infosec**, but most importantly, content that's locally related and _barely_ covered by these professionals for obvious reasons.
