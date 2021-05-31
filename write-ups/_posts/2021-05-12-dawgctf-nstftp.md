@@ -21,6 +21,7 @@ Anyway, let's go with the chall description:
 
 {% include center_img.html path=page.img_dir fname="nstftp_desc.png" caption="" alt_name="chall description" %}
 
+_A repo with the challenge's files can be found [here](https://github.com/litneet64/nstftp) (so you can follow up if you'd like)._
 
 ## First Look
 
@@ -163,7 +164,7 @@ Not yet, little grasshopper, there's another _"quirk"_ that we need to take acco
 ## Making The NSTFTP Client
 This part consisted of mainly programming in `Python` taking advantage of `pwntools` lib (for the sockets and `int` packing) and using `re` (for the regexes) for command parsing from the user (the author likes robustness in his programs), but you are free to do and use whatever language or library you like. The only things it needs to take into account are the protocol specifications when talking with the server!
 
-A client can be found here.
+[A client can be found here](https://github.com/litneet64/nstftp/blob/main/nstftp_client.py).
 
 {% include center_img.html path=page.img_dir fname="nstftp_python_client.png" caption="finished nstftp client (flag and crash are meant to be used by the end of this chall)" alt_name="nstftp python client" %}
 
@@ -259,7 +260,7 @@ So what do we need now to get our flag?
 2. The argument for command 9 has to be `UMBCDAWG`.
 3. The client name needs to be composed of printable bytes only and the sum of the chars (modulo 256) needs to be equal to 124.
 
-One client name that solves `3.` is `NSTFTP-client-go-aaaa=`, another is `GGGi>`, but you can craft any other that follows those constraints. Check out the tool I made to craft _5-char-long_ valid client names here.
+One client name that solves `3.` is `NSTFTP-client-go-aaaa=`, another is `GGGi>`, but you can craft any other that follows those constraints. Check out the tool I made to craft _5-char-long_ valid client names [here](https://github.com/litneet64/nstftp/blob/main/craft_client_name.py).
 
 After knowing this, getting the flag was as trivial as changing 1 line in the client code and sending the required commands.
 
