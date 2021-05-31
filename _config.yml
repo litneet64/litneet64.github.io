@@ -1,3 +1,23 @@
+repository: litneet64/litneet64.github.io
+email: litneet64@gmail.com
+permalink: /:categories/:title/
 theme: minima
-title: Welcome to litneet64's Blog
+minima:
+  social_links:
+    github: litneet64
+    twitter: litneet64
+title: Litneet64's Blog
 description: The space for my own CTF/HTB write ups, OSINT researches and more random stuff
+header_pages:
+  - index.md
+  - sansan-osint/index.md
+  - write-ups/index.md
+  - about.md
+plugins:
+  - jekyll-github-metadata
+  - jekyll-mentions
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jemoji

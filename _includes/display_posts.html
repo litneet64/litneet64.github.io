@@ -1,0 +1,18 @@
+<style type="text/css">
+  {% include post_cards.css %}
+</style>
+
+{% assign site_posts = include.site_posts %}
+
+<div class="card_row">
+  {% for post in site_posts %}
+    {% assign should_get_new_row =  forloop.index | modulo:3 %}
+    {% if should_get_new_row == 0 %}
+      </div>
+      <div class="card_row">
+    {% else %}
+      {% include post_card.html feed_img=post.feed_img post_title=post.title post_url=post.url %}
+    {% endif %}
+    {% assign post_count={{ post_count + 1 }} %}
+  {% endfor %}
+</div>

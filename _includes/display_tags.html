@@ -1,0 +1,11 @@
+<style type="text/css">
+  {% include tag.css %}
+</style>
+
+<div class="ctf_tag_row">
+  {% for tag in page.tags %}
+    <div class="ctf_tag_col">
+      {% include tag.html tag_name=tag %}
+    </div>
+  {% endfor %}
+</div>

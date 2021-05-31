@@ -1,0 +1,9 @@
+<br>
+<center>
+  <img src="{{ include.path }}/{{ include.fname }}" alt="{{ include.alt_name }}">
+  <br><br>
+  {% if include.caption != "" %}
+  <i>{{ include.caption | prepend: "* " | markdownify }}</i>
+  {% endif %}
+</center>
+<br>
